@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>急救知识指南</title>
+  <meta name="description" content="人人都能学会的家庭与公共场所急救手册">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚑</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.0/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css">
+  <style>
+    :root {
+      --theme-color: #c0392b;
+      --theme-color-secondary: #e74c3c;
+      --sidebar-width: 280px;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    .markdown-section h1 {
+      color: var(--theme-color);
+      border-bottom: 2px solid var(--theme-color-secondary);
+      padding-bottom: 0.3em;
+    }
+    .markdown-section h2 {
+      color: var(--theme-color);
+      border-left: 4px solid var(--theme-color-secondary);
+      padding-left: 12px;
+      margin-top: 1.6em;
+    }
+    .markdown-section h3 {
+      color: #2c3e50;
+      margin-top: 1.4em;
+    }
+    .sidebar {
+      background-color: #2c3e50;
+    }
+    .sidebar ul li a {
+      color: #ecf0f1;
+      font-size: 14px;
+    }
+    .sidebar ul li a:hover {
+      color: var(--theme-color-secondary);
+    }
+    .sidebar ul li.active > a {
+      color: #fff;
+      background: var(--theme-color);
+      border-left: 3px solid #f39c12;
+    }
+    .sidebar > h1 {
+      color: #fff;
+      background: var(--theme-color);
+      padding: 16px;
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    blockquote {
+      border-left: 4px solid var(--theme-color-secondary);
+      background: #fdf2f2;
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 0 4px 4px 0;
+    }
+    .markdown-section p code,
+    .markdown-section li code {
+      background: #fef5e7;
+      color: #c0392b;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: "Consolas", "Monaco", monospace;
+      font-size: 0.9em;
+    }
+    .markdown-section pre > code {
+      background: #2d3436;
+      color: #dfe6e9;
+    }
+    .markdown-section table {
+      border-collapse: collapse;
+      margin: 16px 0;
+      width: 100%;
+      font-size: 14px;
+    }
+    .markdown-section table thead {
+      background: var(--theme-color);
+      color: #fff;
+    }
+    .markdown-section table th,
+    .markdown-section table td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    .markdown-section table tbody tr:nth-child(even) {
+      background: #fafafa;
+    }
+    .markdown-section table tbody tr:hover {
+      background: #fdf2f2;
+    }
+    .markdown-section details {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 8px 12px;
+      margin: 12px 0;
+      background: #fafafa;
+    }
+    .markdown-section details summary {
+      cursor: pointer;
+      color: var(--theme-color);
+      font-weight: 600;
+    }
+    .markdown-section a {
+      color: var(--theme-color);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--theme-color-secondary);
+    }
+    .markdown-section a:hover {
+      color: var(--theme-color-secondary);
+      border-bottom-style: solid;
+    }
+    .app-name-link img {
+      display: none;
+    }
+    .cover-main blockquote > p > a {
+      color: var(--theme-color);
+    }
+    .cover-main h1 a {
+      color: #fff;
+      font-size: 48px;
+    }
+    .cover-main p a {
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 8px 24px;
+      border-radius: 4px;
+      transition: all 0.3s;
+    }
+    .cover-main p a:hover {
+      background: rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div id="app">急救知识指南加载中...</div>
+  <script>
+    window.$docsify = {
+      name: '急救知识指南',
+      nameLink: 'README',
+      repo: '',
+      loadSidebar: true,
+      loadNavbar: false,
+      coverpage: true,
+      onlyCover: false,
+      subMaxLevel: 3,
+      auto2top: true,
+      maxLevel: 4,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜索章节或关键词',
+        noData: '未找到结果',
+        depth: 6
+      },
+      pagination: {
+        previousText: '上一章',
+        nextText: '下一章',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      copyCode: {
+        buttonText: '复制',
+        errorText: '复制失败',
+        successText: '已复制'
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.0/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.0/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2.10.1/dist/pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@3.0.1/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markdown.min.js"></script>
+</body>
+</html>
